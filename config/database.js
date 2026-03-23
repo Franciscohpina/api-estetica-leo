@@ -14,7 +14,7 @@ require('dotenv').config();
 // });
 
 const pool = mysql.createPool({
-  host: 'esteticaleo.com', // Cambiamos la IP por el dominio
+  host: '198.59.144.130', // Cambiamos la IP por el dominio
   port: 3306,             // Forzamos el puerto estándar
   user: 'estet1caleos_sistema', 
   password: 'sistemaleos12345!', 
