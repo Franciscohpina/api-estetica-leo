@@ -15,7 +15,7 @@ require('dotenv').config();
 
 const pool = mysql.createPool({
   host: 'esteticaleo.com', // Tu Shared IP de cPanel
-  user: 'estet1caleos_proyecto', // El usuario que creaste en el Wizard
+  user: 'estet1caleos_sistema', // El usuario que creaste en el Wizard
   password: 'sistemaleos12345!', 
   database: 'estet1caleos_estetica_db', // Nombre completo de la BD
   waitForConnections: true,
