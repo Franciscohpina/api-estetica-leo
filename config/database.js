@@ -14,13 +14,16 @@ require('dotenv').config();
 // });
 
 const pool = mysql.createPool({
-  host: '198.59.144.130', // Tu Shared IP de cPanel
-  user: 'estet1caleos_sistema', // El usuario que creaste en el Wizard
+  host: 'esteticaleo.com', // Cambiamos la IP por el dominio
+  port: 3306,             // Forzamos el puerto estándar
+  user: 'estet1caleos_sistema', 
   password: 'sistemaleos12345!', 
-  database: 'estet1caleos_estetica_db', // Nombre completo de la BD
+  database: 'estet1caleos_estetica_db',
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
+  queueLimit: 0,
+  // ESTA LÍNEA ES CLAVE para servidores de cPanel:
+  connectTimeout: 10000 
 });
 
 // Usar promesas en lugar de callbacks
