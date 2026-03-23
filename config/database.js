@@ -39,6 +39,6 @@ pool.getConnection((err, connection) => {
   }
 });
 
-//module.exports = promisePool;
+module.exports = promisePool;
 
-module.exports = pool.promise();
+//module.exports = pool.promise();
